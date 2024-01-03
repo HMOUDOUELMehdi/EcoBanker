@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bank.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="cree" id="cree" onclick="creee()">Cree un compte</div>
+
+    <div class="creeprenom" id="creeprenom">
+        <div class="prenom1" id="prenom1">
+            <div class="prenom" id="prenom">
+                <h4>enter votre prenom </h4>
+                <input type="text" id="forprenom" placeholder="enter votre prenom">
+            </div>
+            <button class="btn1"onclick="prevprenom()">Prev</button>
+            <button class="btn2" id="nextprenom"onclick="nextprenom()">Next</button>
+        </div>
+    </div>
+
+    <div class="creenom" id="creenom">
+        <div class="nom1" id="nom1">
+            <div class="nom" id="nom">
+                <h4>enter votre nom </h4>
+                <input type="text" id="fornom" pattern="A-Z" placeholder="enter votre nom">
+            </div>
+            <button class="btn1" onclick="prevnom()">Prev</button>
+            <button class="btn2" id="nextnom" onclick="nextnom()">Next</button>
+        </div>
+    </div>
+
+    <div class="creesolde" id="creesolde">
+        <div class="prenom1" id="prenom1">
+            <div class="prenom" id="prenom">
+                <h4>enter votre Solde </h4>
+                <input type="number" id="forsolde" placeholder="enter votre Solde">
+            </div>
+            <button class="btn1" onclick="prevsolde()">Prev</button>
+            <button class="btn2" id="nextprenom"onclick="nextsolde()">CREE</button>
+        </div>
+    </div>
+
+    <div class="Ajouter">
+
+        <div class="retrait" id="creeretrait" onclick="retrrait()">Ajouter Un retrait</div>
+        <div class="retrait" id="creenomretrait">
+            <div class="nom1" id="nom1">
+                <div class="nom" id="nom">
+                    <h4 style="font-size: 20px;">enter le nom de compte que peut retrait  </h4>
+                    <input type="text" id="inputnomretrait" pattern="A-Z" placeholder="enter votre nom">
+                    <input type="number" id="forsolderetrait" placeholder="enter votre Solde"><br>
+                    <label for="" id="abel" style="color: red;font-size: 12px;"></label>
+                </div>
+                <button class="btn1" onclick="prevrnom()">Prev</button>
+                <button class="btn2" id="nextnom" onclick="nextrnom()">RETRAIT</button>
+            </div>
+        </div>
+
+        <div class="virement" id="creevirement" onclick="vver()">Ajouter Un virement</div>
+        <div class="virement" id="creenomverment">
+            <div class="nom1" id="nom1">
+                <div class="nom" id="nom">
+                    <h4 style="font-size: 20px;">enter le nom de compte que peut virement  </h4>
+                    <input type="text" id="inputnomverement" pattern="A-Z" placeholder="enter votre nom">
+                    <input type="number" id="forsoldeverment" placeholder="enter votre Solde"><br>
+                    <label for="" id="bel" style="color: red;font-size: 12px;"></label>
+                </div>
+                <button class="btn1" onclick="prevvnom()">Prev</button>
+                <button class="btn2" id="nextnom" onclick="nextvnom()">VIREMENT</button>
+            </div>
+        </div>
+
+    </div>
+<!-- <input type="text" id="test" style="margin-left: 100px;">
+<button id="test1" onclick="teee()">click</button> -->
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Solde</th>
+        </tr>
+        <tbody id="tbody">
+
+            
+
+        </tbody>
+
+    </table>
+
+
+
+    <script src="bank.js"></script>
+</body>
+
+</html>
